@@ -9,7 +9,7 @@ function hasConsonantCount(text, target) {
   const regex = /[aeiou]/gi;
   const removeVowels = text.replaceAll(regex, '');
   console.log(removeVowels);
-  const nonLet = /[a-z]/gi;
+  const nonLet = /[^a-z]/gi;
   const removeNonLetters = removeVowels.replaceAll(nonLet, '');
   console.log(removeNonLetters);
   if (removeNonLetters.length === target) {
